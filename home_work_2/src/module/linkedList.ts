@@ -1,4 +1,4 @@
-// TypeScript models
+// TypeScript models 
 import type { BaseStructure } from "../models/baseStructure.js"
 // Module
 import Node from "./node.js"

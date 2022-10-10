@@ -68,7 +68,9 @@ describe("examination class LinkedList:", () => {
 		expect(displayLinkedListMock).toHaveBeenCalledTimes(3)
 	})
 	test("testing method [Symbol.iterator]", () => {
-		for (const nodeLinkedList of list) {}
+		for (const nodeLinkedList of list) {
+			console.log(nodeLinkedList)
+		}
 		expect(nextIteratorMock).toHaveBeenCalledTimes(3)
 		const newLinkedList: BaseStructure.ILinkedList = new LinkedList()
 		const result: BaseStructure.IIterator = new Iterator(newLinkedList)

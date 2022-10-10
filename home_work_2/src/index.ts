@@ -4,7 +4,7 @@ import type { BaseStructure } from "./models/baseStructure.js"
 import Queue from "./module/queue.js"
 
 abstract class AppMain {
-	static start() {
+	static start(): void {
 		const queue: BaseStructure.IQueue = new Queue()
 		queue.push(10)
 		queue.push(11)

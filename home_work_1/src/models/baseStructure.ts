@@ -1,22 +1,22 @@
 // В этом файле содержатся базовые интерфейсы модулей
 
 export namespace BaseStructure{
-	export interface INode{
+	export interface INode<T = unknown>{
 		next: null | INode;
 		prev: null | INode;
-		value: any;
+		value: T;
 		displayNode: () => string;
-		getValueNode: () => any;
+		getValueNode: () => T;
 	}
 	export interface ILinkedList{
 		first: null | INode;
 		last: null | INode;
 		isEmpty: () => boolean;
 		displayLinkedList: () => void;
-		firstAdd: (valueForNewNode: any) => INode;
-		add: (valueForNewNode: any) => INode;
+		firstAdd<V>(valueForNewNode: V): INode;
+		add<Z>(valueForNewNode: Z): INode;
 		deleteFirst: () => null | INode;
 		deleteLast: () => null | INode;
-		findNodeByValue: (searchValue: any) => null | INode;
+		findNodeByValue<M>(searchValue: M): null | INode;
 	}
 }

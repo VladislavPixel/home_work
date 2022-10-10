@@ -5,7 +5,7 @@ export namespace BaseStructure{
 		value: undefined | INode;
 		done: boolean;
 	}
-	export interface INode<R = any>{
+	export interface INode<R = unknown>{
 		next: null | INode<R>;
 		prev: null | INode<R>;
 		value: R;

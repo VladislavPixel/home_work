@@ -13,7 +13,7 @@ class LinkedList implements BaseStructure.ILinkedList{
 	isEmpty() {
 		return this.first === null
 	}
-	firstAdd(valueForNewNode: any) {
+	firstAdd<T>(valueForNewNode: T) {
 		const newNode = new Node(valueForNewNode)
 		if (this.isEmpty()) {
 			this.last = newNode
@@ -24,7 +24,7 @@ class LinkedList implements BaseStructure.ILinkedList{
 		this.first = newNode
 		return this.first
 	}
-	add(valueForNewNode: any) {
+	add<X>(valueForNewNode: X) {
 		const newNode = new Node(valueForNewNode)
 		if (this.isEmpty()) {
 			this.first = newNode
@@ -67,7 +67,7 @@ class LinkedList implements BaseStructure.ILinkedList{
 			return deletedElement
 		}
 	}
-	findNodeByValue(searchValue: any): null | BaseStructure.INode {
+	findNodeByValue<M>(searchValue: M): null | BaseStructure.INode {
 		if (this.isEmpty()) {
 			console.log("LinkedList is Empty operation deleteLast is not supported!")
 			return null

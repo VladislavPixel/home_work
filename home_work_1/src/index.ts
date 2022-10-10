@@ -2,7 +2,7 @@
 import LinkedList from "./modules/linkedList.js"
 
 abstract class MainApp{
-	static start() {
+	static start(): void {
 		const list = new LinkedList()
 		list.add(1)
 		list.add(2)

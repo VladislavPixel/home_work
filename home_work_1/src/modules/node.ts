@@ -1,11 +1,11 @@
 // TypeScript model
 import type { BaseStructure } from "../models/baseStructure.js"
 
-class Node implements BaseStructure.INode {
+class Node<T> implements BaseStructure.INode<T> {
 	next: null | BaseStructure.INode
 	prev: null | BaseStructure.INode
-	value: any
-	constructor(newValue: any) {
+	value: T
+	constructor(newValue: T) {
 		this.next = null
 		this.prev = this.next
 		this.value = newValue

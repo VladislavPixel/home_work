@@ -4,7 +4,7 @@ import type { BaseStructure } from "../models/baseStructure.js"
 import LinkedList from "./linkedList.js"
 
 class Queue implements BaseStructure.IQueue{
-	head: any
+	head: unknown
 	#base: BaseStructure.ILinkedList
 	#auxiliary: number
 	constructor() {
