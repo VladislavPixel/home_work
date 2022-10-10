@@ -1,0 +1,36 @@
+{
+	"name": "task1",
+	"version": "1.0.0",
+	"description": "my realization task1",
+	"main": "./build/index.js",
+	"type": "module",
+	"scripts": {
+		"tstest": "jest node.spec.ts && jest linkedList.spec.ts",
+		"test": "jest",
+		"build": "tsc"
+	},
+	"keywords": [
+		"js",
+		"ts",
+		"task",
+		"linkedList",
+		"JS",
+		"TS"
+	],
+	"author": "Vladislav <pixel.develop@yandex.ru>",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/plugin-transform-modules-commonjs": "^7.18.6",
+		"@babel/preset-env": "^7.19.3",
+		"@types/jest": "^29.1.2",
+		"babel-jest": "^29.1.2",
+		"jest": "^29.1.2",
+		"mockdate": "^3.0.5",
+		"ts-jest": "^29.0.3",
+		"ts-node": "^10.9.1",
+		"typescript": "^4.8.4"
+	},
+	"dependencies": {
+		"ts-jest-resolver": "^2.0.0"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"preset": "ts-jest",
+	"resolver": "ts-jest-resolver",
+	"testEnvironment": "node",
+	"transform": {
+		"^.+\\.js?$": "babel-jest"
+	}
+}
